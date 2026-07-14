@@ -14,6 +14,7 @@ sys.path.append(str(project_root))
 from src.data.loader import load_telco_churn_data
 from src.models.evaluate import evaluate_model
 from src.models.save_model import save_model
+import joblib
 
 st.set_page_config(page_title="Model Performance", page_icon="🤖")
 
@@ -34,11 +35,13 @@ df["TotalCharges"] = df["TotalCharges"].fillna(
     df["TotalCharges"].median()
 )
 
-encoder = LabelEncoder()
+encoders = {}
 
 for col in df.columns:
     if not pd.api.types.is_numeric_dtype(df[col]):
+        encoder = LabelEncoder()
         df[col] = encoder.fit_transform(df[col].astype(str))
+        encoders[col] = encoder
 
 X = df.drop("Churn", axis=1)
 y = df["Churn"]
@@ -54,6 +57,9 @@ scaler = StandardScaler()
 
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
+
+joblib.dump(encoders, "models/label_encoders.pkl")
+joblib.dump(scaler, "models/scaler.pkl")
 
 # ---------------- Logistic Regression ---------------- #
 

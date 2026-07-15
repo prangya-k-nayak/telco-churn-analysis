@@ -1,13 +1,19 @@
-import streamlit as st
 import sys
 from pathlib import Path
 
 project_root = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(project_root))
 
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
+import streamlit as st
+
+from src.ui.styles import apply_theme
 from src.data.loader import load_telco_churn_data
 
 st.set_page_config(page_title="Dataset", page_icon="📊")
+
+apply_theme()
 
 df = load_telco_churn_data()
 

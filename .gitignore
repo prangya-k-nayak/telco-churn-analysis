@@ -1,17 +1,21 @@
-# macOS
-.DS_Store
+# Virtual Environment
+.venv/
 
 # Python
 __pycache__/
 *.pyc
-.venv/
-.env
 
 # Jupyter
 .ipynb_checkpoints/
 
+# macOS
+.DS_Store
+
 # VS Code
 .vscode/
 
-# Streamlit
+# Streamlit cache
 .streamlit/secrets.toml
+
+# Python cache
+.pytest_cache/

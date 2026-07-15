@@ -1,0 +1,1 @@
+apply_plotly_theme(fig)

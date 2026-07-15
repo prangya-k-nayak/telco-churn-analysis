@@ -1,6 +1,10 @@
 import streamlit as st
 
+from src.ui.styles import apply_theme
+
 st.set_page_config(page_title="About", page_icon="ℹ️")
+
+apply_theme()
 
 st.title("ℹ️ About This Project")
 

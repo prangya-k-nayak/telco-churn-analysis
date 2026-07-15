@@ -20,4 +20,5 @@ __pycache__/
 # Python cache
 .pytest_cache/
 
+# Streamlit agent skills
 .agents/

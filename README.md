@@ -12,6 +12,34 @@ An end-to-end Machine Learning project that analyzes customer churn in the telec
 
 ---
 
+## 📸 Dashboard Preview
+
+### 🏠 Home
+
+![Home Dashboard](assets/home.png)
+
+### 📊 Dataset
+
+![Dataset](assets/dataset.png)
+
+### 📈 EDA
+
+![EDA](assets/eda.png)
+
+### 🤖 Model Performance
+
+![Model Performance](assets/model-performance.png)
+
+### 🔮 Prediction
+
+![Prediction](assets/prediction.png)
+
+### ℹ️ About
+
+![About](assets/about.png)
+
+---
+
 ## 🚀 Features
 
 - 📊 Dataset Overview

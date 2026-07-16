@@ -4,6 +4,14 @@ An end-to-end Machine Learning project that analyzes customer churn in the telec
 
 ---
 
+## 🌐 Live Demo
+
+🔗 **Try the Live Application:** https://telco-churn-analysis-c66ns8v7eks7cpn3ewwwu7.streamlit.app
+
+🔗 **GitHub Repository:** https://github.com/prangya-k-nayak/telco-churn-analysis
+
+---
+
 ## 🚀 Features
 
 - 📊 Dataset Overview
@@ -21,7 +29,7 @@ An end-to-end Machine Learning project that analyzes customer churn in the telec
 telco-churn-analysis/
 │
 ├── app/
-│   ├── app.py
+│   ├── Home.py
 │   └── pages/
 │       ├── 1_Dataset.py
 │       ├── 2_EDA.py
@@ -80,12 +88,21 @@ IBM Telco Customer Churn Dataset
 
 ---
 
+## 📊 Model Performance
+
+| Model | Accuracy |
+|--------|---------:|
+| Logistic Regression | 81.55% |
+| Random Forest | 79.63% |
+
+---
+
 ## ▶️ Run Locally
 
 Clone the repository
 
 ```bash
-git clone <your-github-link>
+git clone https://github.com/prangya-k-nayak/telco-churn-analysis.git
 ```
 
 Install dependencies
@@ -97,7 +114,7 @@ pip install -r requirements.txt
 Run Streamlit
 
 ```bash
-streamlit run app/app.py
+streamlit run app/Home.py
 ```
 
 ---
@@ -115,10 +132,24 @@ The dashboard provides:
 
 ---
 
+## 🚀 Future Improvements
+
+- Explainable AI (SHAP) for prediction interpretation
+- Advanced dashboard UI and animations
+- Customer segmentation and clustering
+- PDF report generation
+- Additional machine learning models
+- Docker deployment
+
+---
+
 ## 👩‍💻 Author
 
 **Prangya Kumari Nayak**
 
-MCA (Artificial Intelligence & Machine Learning)
-
+MCA (Artificial Intelligence & Machine Learning)  
 Jain (Deemed-to-be University)
+
+📧 pragyakumarinayak173@gmail.com
+
+🐙 GitHub: https://github.com/prangya-k-nayak
